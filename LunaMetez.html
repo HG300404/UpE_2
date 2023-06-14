@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="./aos-master/dist/aos.css" rel="stylesheet" />
+    <script src="./aos-master/dist/aos.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.leanhduc.pro.vn/utilities/animation/shake-effect/style.css"/>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <img src="./images/logo.png" alt="Logo" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a class="active" href="about.html">Về chúng tôi</a></li>
+          <li><a href="courses.html">Khoá học</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+        <img id="menu-btn" src="/images/menu.png" alt="" />
+        <a href="index.html#registration"><button class="menubutton">ĐĂNG KÝ HỌC THỬ</button></a>
+      </div>
+    </nav>
+
+    <section id="container">
+      <div class="profile-header">
+        <div class="profile-img">
+          <img src="/images/trangChu/t1.png" alt="" />
+        </div>
+
+        <div class="profile-nav-info">
+          <h3 class="user-name">LUNA METEZ</h3>
+          <div class="address">
+            <p class="state">GIẢNG VIÊN TIẾNG ANH BẢN ĐỊA</p>
+          </div>
+        </div>
+
+        <div class="profile-option">
+          <div class="notification">
+            <i class="fa fa-bell rung"></i>
+            <span class="alert-message">1</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-bd">
+        <div class="left-side">
+          <div class="profile-side">
+            <p class="mobile-no"><i class="fa fa-phone"></i>(84) 29 345 1452</p>
+            <p class="user-mail">
+              <i class="fa fa-envelope"></i>luna.upe@gmail.com
+            </p>
+
+            <div class="profile-btn">
+              <button class="chatbtn"><i class="fa fa-comment"></i>Chat</button>
+              <button class="createbtn">
+                <i class="fa fa-plus"></i>Đánh giá
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="nav">
+            <ul>
+              <li onclick="tabs(0)" class="user-infor active">Information</li>
+              <li onclick="tabs(1)" class="user-speak">Blog</li>
+            </ul>
+          </div>
+
+          <div class="profile-body">
+            <div class="profile-infor tab">
+              <p>
+                <i class="far fa-check-circle"></i> 4 năm Kinh nghiệm giảng dạy
+              </p>
+              <p><i class="far fa-check-circle"></i> Có bằng cấp 300 giờ TEFL </p>
+              <p>
+                <i class="far fa-check-circle"></i> trong tay tấm bằng cứ nhân Giáo dục cấp cơ sở
+              </p>
+              <p>
+                <i class="far fa-check-circle"></i> Giàu kinh nghiệm và đầy cảm hứng
+              </p>
+            </div>
+            <div class="profile-speak tab">
+              <p>Hi there! </p>
+            <p>My name is teacher Luna . </p>
+                    <p> I am a native English speaker . I have completed my 300 hour
+                tefl diploma. I am kind and enthusiastic. I love working with
+                people and have a passion for teaching . My classes are fun and
+                engaging. My main goal is to see you succeed ! I use the TPR
+                teaching method in my class. It will be an absolute pleasure to
+                help you achieve your goals! </p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div data-aos="flip-left" data-aos-duration="2000" class="footer-col">
+        <h3>Trang chủ</h3>
+        <li>Tính năng</li>
+        <li>Khóa học</li>
+        <li>Giáo viên</li>
+      </div>
+      <div data-aos="flip-left" data-aos-duration="2000" class="footer-col">
+        <h3>Khóa học</h3>
+        <li>Toeic</li>
+        <li>Ielts</li>
+        <li>Toefl</li>
+      </div>
+      <div data-aos="flip-left" data-aos-duration="2000" class="footer-col">
+        <h3>Tài Nguyên</h3>
+        <li>Hướng dẫn</li>
+        <li>Tài liệu</li>
+        <li>Dịch vụ Marketing</li>
+      </div>
+      <div data-aos="flip-left" data-aos-duration="2000" class="footer-col">
+        <h3>Địa Chỉ</h3>
+        <li>48 Bình Kì, Hòa Quý, Đà Nẵng, Việt Nam</li>
+        <li>Hotline tư vấn: 0978 391 028</li>
+        <li>Email: upe123@gmail.com</li>
+      </div>
+      <div data-aos="flip-left" data-aos-duration="2000" class="footer-col">
+        <h3>Newsletter</h3>
+        <li>You can trust us. We only send promo offers</li>
+        <div class="subcribe">
+          <input type="text" placeholder="Your Email address" />
+          <a href="#" class="yellow">SUBCRIBE</a>
+        </div>
+      </div>
+      <div data-aos="flip-left" data-aos-duration="2000" class="copyright">
+        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> -->
+        <div class="pro-links">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </footer>
+    <script src="./jquery.js"></script>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+
+    <script src="/main.js"></script>
+  </body>
+  <script>
+    AOS.init();
+  </script>
+</html>

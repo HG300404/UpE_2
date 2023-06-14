@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bwd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="./aos-master/dist/aos.css" rel="stylesheet" />
+    <script src="./aos-master/dist/aos.js"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <img src="./images/logo.png" alt="Logo" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a class="active" href="about.html">Về chúng tôi</a></li>
+          <li><a href="courses.html">Khoá học</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+        <img id="menu-btn" src="/images/menu.png" alt="" />
+        <a href="index.html#registration"
+          ><button class="menubutton">ĐĂNG KÝ HỌC THỬ</button></a
+        >
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="about-home">
+      <img src="images/trangChu/banner2.jpg" alt="" />
+      <h2>Về chúng tôi - UpE</h2>
+    </section>
+
+    <section id="about-container">
+      <div class="about-img">
+        <img
+          data-aos="zoom-out-down"
+          data-aos-duration="3000"
+          src="/images/aboutUs/p1.png"
+          alt=""
+        />
+      </div>
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        class="about-text"
+      >
+        <h2>
+          Chào mừng đến với UpE - nền tảng học trực tuyến cho khóa học tiếng Anh
+          chất lượng cao!
+        </h2>
+        <p>
+          Với slogan "Real Talks, Real Teachers", chúng tôi cam kết mang đến cho
+          bạn những trải nghiệm học tập tuyệt vời với các giáo viên chuyên
+          nghiệp.
+        </p>
+        <div class="about-fe">
+          <img src="/images/aboutUs/icon_videoCamera.png" alt="" />
+          <div class="fe-text">
+            <h5>Bài giảng</h5>
+            <p>
+              UpE cung cấp môi trường học tiếng Anh độc đáo với bài giảng thực
+              tế và giáo viên có kinh nghiệm.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-fe">
+          <img src="/images/aboutUs/giaovien.png" alt="" />
+          <div class="fe-text">
+            <h5>Giáo viên</h5>
+            <p>
+              Đội ngũ giáo viên am hiểu các kỳ thi tiếng Anh quan trọng như
+              TOEIC, IELTS, TOEFL.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-fe">
+          <img src="/images/aboutUs/giaodien.png" alt="" />
+          <div class="fe-text">
+            <h5>Giao diện</h5>
+            <p>
+              Giao diện thân thiện và dễ sử dụng cho phép truy cập và tận hưởng
+              khóa học trực tuyến mọi lúc, mọi nơi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+      <h1 data-aos="fade-up" data-aos-duration="2000">TÍNH NĂNG</h1>
+      <div data-aos="fade-right" data-aos-duration="1800" class="fea-base">
+        <div class="fea-box">
+          <img src="images/courses/t1.png" alt="" />
+          <h3>Học trực tuyến linh hoạt</h3>
+          <p>
+            UpE cung cấp một nền tảng học trực tuyến linh hoạt, cho phép bạn
+            tiếp cận khóa học từ bất kỳ đâu và vào bất kỳ thời điểm nào
+          </p>
+        </div>
+        <div class="fea-box">
+          <img src="images/courses/t2.png" alt="" />
+          <h3>Giáo viên thực tế và chất lượng</h3>
+          <p>
+            Tại UpE, chúng tôi tự hào có đội ngũ giáo viên thực tế và chất lượng
+          </p>
+        </div>
+        <div class="fea-box">
+          <img src="images/courses/t3.png" alt="" />
+          <h3>Tương tác và phản hồi</h3>
+          <p>
+            Tương tác giữa giáo viên và học viên. Bạn có thể gửi câu hỏi, yêu
+            cầu phản hồi và nhận được sự hỗ trợ từ giáo viên của bạn.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog-container">
+      <h1 data-aos="zoom-in">TẠI SAO NÊN CHỌN UP-E?</h1>
+      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+      <div class="benefit-box">
+        <div data-aos="flip-right" data-aos-duration="2000" class="benefits">
+          <img src="/images/blogs/t1.png" alt="" />
+          <div class="details">
+            <h2>Giáo viên thực tế</h2>
+            <p>
+              Chúng tôi có đội ngũ giáo viên giàu kinh nghiệm và hiểu rõ về các
+              yêu cầu và thách thức khi học tiếng Anh. Họ sẽ cung cấp cho bạn
+              những kiến thức và kỹ năng cần thiết để thành công trong các kỳ
+              thi tiếng Anh và trong cuộc sống hàng ngày.
+            </p>
+          </div>
+        </div>
+
+        <div data-aos="flip-right" data-aos-duration="2000" class="benefits">
+          <img src="/images/blogs/t2.jpg" alt="" />
+          <div class="details">
+            <h2>Bài giảng thực tế</h2>
+            <p>
+              Các bài giảng của chúng tôi sẽ tập trung vào việc sử dụng ngôn ngữ
+              thực tế và giao tiếp trong các tình huống thực tế. Bạn sẽ được
+              lắng nghe và thảo luận với giáo viên và các bạn học viên khác về
+              các chủ đề và vấn đề thực tế, giúp bạn phát triển khả năng giao
+              tiếp tự tin và linh hoạt.
+            </p>
+          </div>
+        </div>
+
+        <div data-aos="flip-right" data-aos-duration="2000" class="benefits">
+          <img src="/images/blogs/t3.png" alt="" />
+          <div class="details">
+            <h2>Linh hoạt và tiện lợi</h2>
+            <p>
+              Với UpE, bạn có thể học tập theo lịch trình của riêng mình và từ
+              bất kỳ địa điểm nào. Bạn có thể truy cập vào nền tảng học trực
+              tuyến của chúng tôi bằng máy tính, điện thoại di động hoặc máy
+              tính bảng, mang lại sự linh hoạt và tiện lợi cho quá trình học tập
+              của bạn.
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <section id="blog-container2">
+      <div class="benefit-box">
+        <div data-aos="flip-right" data-aos-duration="2000" class="benefits">
+          <img src="/images/blogs/t4.png" alt="" />
+          <div class="details">
+            <h2>Tài liệu và tài nguyên phong phú</h2>
+            <p>
+              Chúng tôi cung cấp các tài liệu học phụ, bài tập thực hành và đề
+              thi mô phỏng để bạn có thể ôn tập và nâng cao kiến thức của mình.
+              Bạn cũng có thể tương tác và học hỏi từ các nguồn tài nguyên bổ
+              ích khác như video, bài viết, và tài liệu tham khảo.
+            </p>
+          </div>
+        </div>
+
+        <div data-aos="flip-right" data-aos-duration="2000" class="benefits">
+          <img src="/images/blogs/t5.png" alt="" />
+          <div class="details">
+            <h2>Tính tương tác và học tập đa dạng</h2>
+            <p>
+              Tại UpE, chúng tôi tạo ra một môi trường học tập tương tác và đa
+              dạng. Bạn sẽ được tham gia vào các hoạt động nhóm, thảo luận, và
+              trò chuyện với giáo viên và các bạn học viên khác. Bằng cách tham
+              gia vào các hoạt động thực tế, bạn sẽ nâng cao khả năng giao tiếp
+              của mình và áp dụng ngôn ngữ tiếng Anh vào cuộc sống hàng ngày.
+            </p>
+          </div>
+        </div>
+
+        <div data-aos="flip-right" data-aos-duration="2000" class="benefits">
+          <img src="/images/blogs/t6.png" alt="" />
+          <div class="details">
+            <h2>Đánh giá và theo dõi tiến trình</h2>
+            <p>
+              UpE cung cấp hệ thống đánh giá và theo dõi tiến trình học tập của
+              bạn. Bạn sẽ có cơ hội xem lại những tiến bộ của mình, nhận phản
+              hồi từ giáo viên và nhận được gợi ý để cải thiện kỹ năng ngôn ngữ
+              của mình. Chúng tôi sẽ đồng hành cùng bạn trong quá trình học tập
+              và giúp bạn đạt được mục tiêu của mình.
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="blog">
+      <h1 data-aos="zoom-in-down" data-aos-duration="1700">
+        Ngoài những thế mạnh trên, tại UP-E người học hoàn toàn có thể yên tâm
+        bởi:
+      </h1>
+      <div class="benefits">
+        <div data-aos="flip-left" data-aos-duration="3000" class="blog-box">
+          <img src="/images/blogs/p1.png" alt="" />
+          <div class="details">
+            <h2>Quyền lợi của học viên luôn được ưu tiên số 1</h2>
+            <p>
+              Chính sách bảo lưu, chuyển nhượng,..linh động theo nhu cầu của
+              người học
+            </p>
+          </div>
+        </div>
+
+        <div data-aos="flip-left" data-aos-duration="3000" class="blog-box">
+          <img src="/images/blogs/p2.png" alt="" />
+          <div class="details">
+            <h2>Lộ trình học tập riêng biệt cho mỗi học viên</h2>
+            <p>
+              Học viên được thiết kế lộ trình học tập riêng phù hợp với nhu cầu
+              và mục tiêu khoá học
+            </p>
+          </div>
+        </div>
+
+        <div data-aos="flip-left" data-aos-duration="3000" class="blog-box">
+          <img src="/images/blogs/p3.png" alt="" />
+          <div class="details">
+            <h2>Hệ thống quản lý thông minh</h2>
+            <p>
+              Học viên có thể tự theo dõi đánh giá của giáo viên sau mỗi buổi
+              học…
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog">
+      <div class="benefits">
+        <div data-aos="flip-left" data-aos-duration="3000" class="blog-box">
+          <img src="/images/blogs/p4.png" alt="" />
+          <div class="details">
+            <h2>Kiểm tra trình độ sau mỗi khóa học</h2>
+            <p>
+              Việc kiểm tra trình độ định kỳ giúp đánh giá sự tiến bộ của học
+              viên 1 cách khách quan nhất
+            </p>
+          </div>
+        </div>
+
+        <div data-aos="flip-left" data-aos-duration="3000" class="blog-box">
+          <img src="/images/blogs/p5.png" alt="" />
+          <div class="details">
+            <h2>Giáo viên nhiệt tình hỗ trợ sau giờ học</h2>
+            <p>
+              Học viên có thêm sự hỗ trợ giải đáp từ giáo viên không chỉ trong
+              mà cả sau giờ học
+            </p>
+          </div>
+        </div>
+
+        <div data-aos="flip-left" data-aos-duration="3000" class="blog-box">
+          <img src="/images/blogs/p6.png" alt="" />
+          <div class="details">
+            <h2>Hoàn lại 100% học phí nếu học không hiệu quả</h2>
+            <p>
+              Học phí sẽ được hoàn lại 100% nếu học không tiến bộ sau 1 khoá học
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Trusted By -->
+    <section id="trust">
+      <h1 data-aos="fade-up" data-aos-duration="2000">ĐÁNG TIN CẬY</h1>
+      <div data-aos="fade-right" data-aos-duration="1800" class="trust-img">
+        <img src="images/aboutUs/t1.png" alt="" />
+        <img src="images/aboutUs/t2.png" alt="" />
+        <img src="images/aboutUs/t3.png" alt="" />
+        <img src="images/aboutUs/t4.png" alt="" />
+        <img src="images/aboutUs/t5.png" alt="" />
+        <img src="images/aboutUs/t6.png" alt="" />
+      </div>
+    </section>
+
+<!-- Footer -->
+    <footer>
+      <div data-aos="flip-left" data-aos-duration="2000" class="footer-col">
+        <h3>Trang chủ</h3>
+        <li>Tính năng</li>
+        <li>Khóa học</li>
+        <li>Giáo viên</li>
+      </div>
+      <div data-aos="flip-left" data-aos-duration="2000" class="footer-col">
+        <h3>Khóa học</h3>
+        <li>Toeic</li>
+        <li>Ielts</li>
+        <li>Toefl</li>
+      </div>
+      <div data-aos="flip-left" data-aos-duration="2000" class="footer-col">
+        <h3>Tài Nguyên</h3>
+        <li>Hướng dẫn</li>
+        <li>Tài liệu</li>
+        <li>Dịch vụ Marketing</li>
+      </div>
+      <div data-aos="flip-left" data-aos-duration="2000" class="footer-col">
+        <h3>Địa Chỉ</h3>
+        <li>48 Bình Kì, Hòa Quý, Đà Nẵng, Việt Nam</li>
+        <li>Hotline tư vấn: 0978 391 028</li>
+        <li>Email: upe123@gmail.com</li>
+      </div>
+      <div data-aos="flip-left" data-aos-duration="2000" class="footer-col">
+        <h3>Newsletter</h3>
+        <li>You can trust us. We only send promo offers</li>
+        <div class="subcribe">
+          <input type="text" placeholder="Your Email address" />
+          <a href="#" class="yellow">SUBCRIBE</a>
+        </div>
+      </div>
+      <div data-aos="flip-left" data-aos-duration="2000" class="copyright">
+        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> -->
+        <div class="pro-links">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+  <script>
+    AOS.init();
+  </script>
+</html>
