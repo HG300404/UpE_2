@@ -200,6 +200,9 @@ button:active {
   padding: 5vw 8vw 0 8vw;
   text-align: center;
 }
+#features h1 {
+  font-size: xx-large;
+}
 #features .fea-base {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -247,6 +250,9 @@ button:active {
 #course {
   padding: 8vw 8vw 8vw 8vw;
   text-align: center;
+}
+#course h1 {
+  font-size: xx-large;
 }
 #course .course-box {
   display: grid;
@@ -337,10 +343,22 @@ button:active {
 }
 #registration .form h3 {
   text-align: center;
+  margin-bottom: 1.5rem;
 }
-#registration .form input {
-  margin: 15px 0;
+
+.input-row {
+  margin-bottom: 1.5rem;
+}
+.input-row input {
   padding: 15px 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 40px;
+  line-height: 40px;
+  outline: none;
+  transition: all 0.3s ease-out;
+}
+.input-row input:focus {
   border: 1px solid rgb(84, 40, 241);
   outline: none;
 }
@@ -349,10 +367,29 @@ button:active {
   font-weight: 500;
   font-size: 0.9;
 }
-#registration .form .btn {
-  margin-top: 20px;
-  margin-left: 40px;
+
+.input-row {
+  position: relative;
 }
+
+.input-row.success input {
+  border-color: rgb(84, 40, 241);
+}
+.input-row.error input {
+  border-color: #e74c3c;
+}
+.input-row small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  visibility: hidden;
+  font-size: 12px;
+}
+.input-row.error small {
+  visibility: visible;
+}
+
 @keyframes doimauchu {
   from {
     color: #fff;
@@ -361,36 +398,38 @@ button:active {
     color: yellow;
   }
 }
-#registration .form a.yellow {
-  margin-left: 90px;
-  width: 130px;
+
+#registration .form .btn {
+  margin: 0 auto;
+  height: 40px;
+  width: 45%;
   text-align: center;
-  text-decoration: none;
   font-size: 0.9rem;
-  margin-top: 13px;
-  padding: 13px 35px;
-  background-color: #fff;
+  margin-top: 9px;
   font-weight: 600;
   border-radius: 5px;
-  color: #fff;
   background: #010183;
   transition: 0.3s ease;
   animation: doimauchu ease-in-out 0.8s infinite;
+  display: inline-block;
 }
-#registration .form a.yellow:hover {
-  /* color: rgb(21, 21, 100); */
-  background: #fff;
-}
+
 /* Experts */
 #experts {
   padding: 8vw 8vw 8vw 8vw;
   text-align: center;
+}
+#experts h1 {
+  font-size: xx-large;
 }
 #experts .expert-box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1rem;
   margin-top: 50px;
+}
+#experts .expert-box img {
+  margin-left: 40px;
 }
 #experts .expert-box .profile {
   background: #fafaf1;
@@ -410,6 +449,122 @@ button:active {
   color: #fff;
   border: 1px solid rgb(21, 21, 100);
   cursor: pointer;
+}
+/* Main-register */
+.sign-up {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  /* background: rgb(83, 117, 241); */
+  background-image: url(./images/bg-signup.jpg);
+}
+.containersg {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.containersg header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+.containersg .formsg {
+  margin-top: 30px;
+}
+.formsg .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.formsg :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.formsg .column {
+  display: flex;
+  column-gap: 15px;
+}
+.formsg .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.formsg :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.formsg .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: rgb(83, 117, 241);
+}
+.formsg :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: #707070;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.formsg button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(83, 117, 241);
+}
+.formsg button:hover {
+  background: rgb(1, 23, 188);
+}
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
 }
 
 /* Teacher-inner */

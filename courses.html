@@ -69,18 +69,18 @@
         >
           <img src="/images/trangChu/toeic.png" alt="" />
           <div class="details">
-            <span>Updated 19/05/23</span>
-            <h6>TOEIC</h6>
+            <span id="date"></span>
+            <h6 id="name"></h6>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
-              <span>(239)</span>
+              <span id="amount"></span>
             </div>
           </div>
-          <div class="cost">$49.99</div>
+          <div class="cost" id="price"></div>
         </div>
         <div
           data-aos="zoom-out-up"
@@ -126,6 +126,7 @@
         </div>
       </div>
     </section>
+
     <footer>
       <div data-aos="flip-left" data-aos-duration="2000" class="footer-col">
         <h3>Trang chủ</h3>
@@ -177,6 +178,7 @@
         $("nav .navigation ul").removeClass("active");
       });
     </script>
+    <script src="/nhap.js"></script>
   </body>
   <script>
     AOS.init();

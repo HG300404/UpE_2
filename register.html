@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bwd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="./aos-master/dist/aos.css" rel="stylesheet" />
+    <script src="./aos-master/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body class="sign-up">
+    <section class="containersg">
+      <header>Đăng kí học thử</header>
+      <form action="" class="formsg">
+        <div class="input-box">
+          <label>Họ tên</label>
+          <input
+            type="text"
+            id="Họ tên"
+            name="Họ tên"
+            placeholder="Nhập họ và tên"
+            required
+          />
+        </div>
+
+        <div class="input-box">
+          <label>Email</label>
+          <input
+            type="text"
+            id="Email"
+            name="Email"
+            placeholder="Nhập địa chỉ email"
+            required
+          />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Số điện thoại</label>
+            <input
+              type="text"
+              id="Số điện thoại"
+              name="Số điện thoại"
+              placeholder="Nhập SĐT"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label>Ngày Sinh</label>
+            <input
+              type="date"
+              id="Ngày Sinh"
+              name="Ngày Sinh"
+              placeholder="Nhập ngày sinh"
+              required
+            />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Giới tính</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">Nam</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Nữ</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">Giới tính khác</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Địa chỉ</label>
+          <input
+            type="text"
+            id="Địa chỉ"
+            name="Địa chỉ"
+            placeholder="Nhập địa chỉ"
+            required
+          />
+
+          <div class="column">
+            <div class="select-box" id="country" required>
+              <select>
+                <option hidden>Quốc gia</option>
+                <option>Viet Nam</option>
+                <option>Nhat Ban</option>
+                <option>Han Quoc</option>
+                <option>Thai Lan</option>
+              </select>
+            </div>
+            <input
+              type="text"
+              id="Tỉnh"
+              name="Tỉnh"
+              placeholder="Nhập tỉnh/thành phố"
+              required
+            />
+          </div>
+        </div>
+        <button>Đăng Kí</button>
+      </form>
+    </section>
+    <script>
+      //Validate form login starts
+
+      const usernameEle = document.getElementById("Họ tên");
+      const emailEle = document.getElementById("Email");
+      const phoneEle = document.getElementById("Số điện thoại");
+      // const birth = document.getElementById("Ngày Sinh");
+      // const address = document.getElementById("Địa chỉ");
+      // const country = document.getElementById("country");
+      // const city = document.getElementById("Tỉnh");
+
+      const btnRegister = document.getElementById("btn-register");
+      const inputEles = document.querySelectorAll(".input-row");
+
+      btnRegister.addEventListener("click", function () {
+        Array.from(inputEles).map((ele) =>
+          ele.classList.remove("success", "error")
+        );
+        let isValid = checkValidate();
+
+        if (isValid) {
+          alert("Gửi đăng ký thành công");
+        }
+      });
+
+      function checkValidate() {
+        let usernameValue = usernameEle.value;
+        let emailValue = emailEle.value;
+        let phoneValue = phoneEle.value;
+
+        let isCheck = true;
+
+        if (usernameValue == "") {
+          setError(usernameEle, "Tên không được để trống");
+          isCheck = false;
+        } else {
+          setSuccess(usernameEle);
+        }
+
+        if (emailValue == "") {
+          setError(emailEle, "Email không được để trống");
+          isCheck = false;
+        } else if (!isEmail(emailValue)) {
+          setError(emailEle, "Email không đúng định dạng");
+          isCheck = false;
+        } else {
+          setSuccess(emailEle);
+        }
+
+        if (phoneValue == "") {
+          setError(phoneEle, "Số điện thoại không được để trống");
+          isCheck = false;
+        } else if (!isPhone(phoneValue)) {
+          setError(phoneEle, "Số điện thoại không đúng định dạng");
+          isCheck = false;
+        } else {
+          setSuccess(phoneEle);
+        }
+
+        return isCheck;
+      }
+
+      function setSuccess(ele) {
+        ele.parentNode.classList.add("success");
+      }
+
+      function setError(ele, message) {
+        let parentEle = ele.parentNode;
+        parentEle.classList.add("error");
+        parentEle.querySelector("small").innerText = message;
+      }
+
+      function isEmail(email) {
+        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+          email
+        );
+      }
+
+      function isPhone(number) {
+        return /(84|0[3|5|7|8|9])+([0-9]{8})\b/.test(number);
+      }
+    </script>
+  </body>
+</html>

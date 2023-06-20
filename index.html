@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bwd</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -28,6 +31,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css"
+    />
   </head>
   <body>
     <!-- Navigation -->
@@ -42,7 +50,9 @@
           <li><a href="contact.html">Liên hệ</a></li>
         </ul>
         <img id="menu-btn" src="/images/menu.png" alt="" />
-        <a href="#registration"><button class="menubutton">ĐĂNG KÝ HỌC THỬ</button></a>
+        <a href="#registration"
+          ><button class="menubutton">ĐĂNG KÝ HỌC THỬ</button></a
+        >
       </div>
     </nav>
 
@@ -55,10 +65,51 @@
       </div> -->
     </section>
 
+    <!--Tăng động-->
+    <div class="my-8 py-24 bg-blue-500">
+      <div
+        class="text-white font-hairline text-2xl text-center text-blue-100 mb-16 font-bold lg\:font-serif"
+      >
+        UPE ĐỒNG HÀNH CÙNG BẠN
+      </div>
+
+      <div class="flex flex-col lg:flex-row items-center lg:justify-center">
+        <div class="flex flex-col items-center mx-12 w-64 mb-12 lg:mb-0">
+          <div
+            id="transaction-count"
+            class="text-6xl font-extrabold text-white mb-6"
+          >
+            1,000
+          </div>
+          <div class="text-xl text-blue-200">Lượt đăng kí</div>
+        </div>
+
+        <div class="flex flex-col items-center mx-12 w-64 mb-12 lg:mb-0">
+          <div id="city-count" class="text-6xl font-extrabold text-white mb-6">
+            23
+          </div>
+          <div class="text-xl text-blue-200">Khóa học</div>
+        </div>
+
+        <div class="flex flex-col items-center mx-12 w-64 mb-12 lg:mb-0">
+          <div
+            id="customer-count"
+            class="text-6xl font-extrabold text-white mb-6"
+          >
+            150
+          </div>
+          <div class="text-xl text-blue-200">Học viên</div>
+        </div>
+      </div>
+    </div>
     <!-- Features -->
     <section id="features">
-      <h1 data-aos="fade-up" data-aos-duration="2000">TẠI SAO NÊN HỌC TẠI UPE?</h1>
-      <h3 data-aos="fade-up" data-aos-duration="2000" class="info2">Mong muốn học IELTS nhưng bạn chưa biết nên bắt đầu từ đâu?</h3>
+      <h1 data-aos="fade-up" data-aos-duration="2000">
+        TẠI SAO NÊN HỌC TẠI UPE?
+      </h1>
+      <h3 data-aos="fade-up" data-aos-duration="2000" class="info2">
+        Mong muốn học IELTS nhưng bạn chưa biết nên bắt đầu từ đâu?
+      </h3>
       <div data-aos="fade-right" data-aos-duration="1800" class="fea-base">
         <div class="fea-box">
           <img src="images/courses/t1.png" alt="" />
@@ -72,8 +123,8 @@
           <img src="images/courses/t2.png" alt="" />
           <h3>Giáo viên thực tế và chất lượng</h3>
           <p>
-            UpE tự hào có đội ngũ giáo viên thực tế và chất lượng, các chuyên gia sẽ thảo luận
-            và đưa ra lộ trình học an toàn dành cho bạn.
+            UpE tự hào có đội ngũ giáo viên thực tế và chất lượng, các chuyên
+            gia sẽ thảo luận và đưa ra lộ trình học an toàn dành cho bạn.
           </p>
         </div>
         <div class="fea-box">
@@ -158,7 +209,7 @@
     </section>
 
     <!-- Registration -->
-    <section id="registration">
+    <!-- <section id="registration">
       <div data-aos="zoom-out-right" data-aos-duration="2000" class="reminder">
         <p>Nhận 100 Khóa học Online miễn phí</p>
         <h1>Đăng kí để nhận</h1>
@@ -188,6 +239,64 @@
         <input type="text" placeholder="Số điện thoại" name="" id="" />
           <a class="yellow" href="#">ĐĂNG KÍ</a>
         </div>
+      </div>
+    </section> -->
+    <section id="registration">
+      <div data-aos="zoom-out-right" data-aos-duration="2000" class="reminder">
+        <p>Nhận 100 Khóa học Online miễn phí</p>
+        <h1>Đăng kí để nhận</h1>
+        <div class="time">
+          <div class="date">
+            <p id="days">00</p>
+            <span style="color: white">Ngày</span>
+          </div>
+          <div class="date">
+            <p id="hours">00</p>
+            <span style="color: white">Giờ</span>
+          </div>
+          <div class="date">
+            <p id="minutes">00</p>
+            <span style="color: white">Phút</span>
+          </div>
+          <div class="date">
+            <p id="seconds">00</p>
+            <span style="color: white">Giây</span>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="zoom-out-right" data-aos-duration="2000" class="form">
+        <h3>Đăng ký học NGAY tức thì!</h3>
+        <div class="input-row">
+          <input
+            type="text"
+            placeholder="Họ tên"
+            id="username"
+            autocomplete="off"
+          />
+          <small></small>
+        </div>
+
+        <div class="input-row">
+          <input
+            type="email"
+            placeholder="Email"
+            id="email"
+            autocomplete="off"
+          />
+          <small></small>
+        </div>
+
+        <div class="input-row">
+          <input
+            type="text"
+            placeholder="Số điện thoại"
+            id="phone"
+            autocomplete="off"
+          />
+          <small></small>
+        </div>
+        <button class="btn" id="btn-register">ĐĂNG KÝ</button>
       </div>
     </section>
 
@@ -294,6 +403,86 @@
       $("#menu-close").click(function () {
         $("nav .navigation ul").removeClass("active");
       });
+    </script>
+    <script src="/count.js"></script>
+    <script>
+      //Validate form login starts
+
+      const usernameEle = document.getElementById("username");
+      const emailEle = document.getElementById("email");
+      const phoneEle = document.getElementById("phone");
+
+      const btnRegister = document.getElementById("btn-register");
+      const inputEles = document.querySelectorAll(".input-row");
+
+      btnRegister.addEventListener("click", function () {
+        Array.from(inputEles).map((ele) =>
+          ele.classList.remove("success", "error")
+        );
+        let isValid = checkValidate();
+
+        if (isValid) {
+          alert("Gửi đăng ký thành công");
+          window.location.href = "register.html";
+        }
+      });
+
+      function checkValidate() {
+        let usernameValue = usernameEle.value;
+        let emailValue = emailEle.value;
+        let phoneValue = phoneEle.value;
+
+        let isCheck = true;
+
+        if (usernameValue == "") {
+          setError(usernameEle, "Tên không được để trống");
+          isCheck = false;
+        } else {
+          setSuccess(usernameEle);
+        }
+
+        if (emailValue == "") {
+          setError(emailEle, "Email không được để trống");
+          isCheck = false;
+        } else if (!isEmail(emailValue)) {
+          setError(emailEle, "Email không đúng định dạng");
+          isCheck = false;
+        } else {
+          setSuccess(emailEle);
+        }
+
+        if (phoneValue == "") {
+          setError(phoneEle, "Số điện thoại không được để trống");
+          isCheck = false;
+        } else if (!isPhone(phoneValue)) {
+          setError(phoneEle, "Số điện thoại không đúng định dạng");
+          isCheck = false;
+        } else {
+          setSuccess(phoneEle);
+        }
+
+        return isCheck;
+      }
+
+      function setSuccess(ele) {
+        ele.parentNode.classList.add("success");
+      }
+
+      function setError(ele, message) {
+        let parentEle = ele.parentNode;
+        parentEle.classList.add("error");
+        parentEle.querySelector("small").innerText = message;
+      }
+
+      function isEmail(email) {
+        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+          email
+        );
+      }
+
+      function isPhone(number) {
+        return /(84|0[3|5|7|8|9])+([0-9]{8})\b/.test(number);
+      }
     </script>
   </body>
   <script>
